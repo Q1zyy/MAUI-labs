@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.ConverterPage">
+    <HorizontalStackLayout HorizontalOptions="Center">
+        <DatePicker x:Name="DateSelection" DateSelected="DateSelected"></DatePicker>
+        <HorizontalStackLayout>
+            <Entry x:Name="LabelBYN" HeightRequest="50" Keyboard="Numeric" TextChanged="ChangedBYN"></Entry>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text="BYN"></Label>
+            <Entry x:Name="LabelForeign" HeightRequest="50" Keyboard="Numeric" TextChanged="ChangedForeign"></Entry>
+            <Picker x:Name="RatePicker" HeightRequest="50">
+                <Picker.Items>
+                    <x:String>RUB</x:String>
+                    <x:String>EUR</x:String>
+                    <x:String>USD</x:String>
+                    <x:String>CHF</x:String>
+                    <x:String>CNY</x:String>
+                    <x:String>GBP</x:String>
+                </Picker.Items>
+            </Picker>
+        </HorizontalStackLayout>
+    </HorizontalStackLayout>
+</ContentPage>

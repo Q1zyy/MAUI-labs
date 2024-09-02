@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.CalculatorPage">
+    <Grid RowDefinitions="2*,*,*,*,*,*,*,*">
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="buffer" Text="" FontSize="32" MaximumHeightRequest="50" Grid.ColumnSpan="4" VerticalOptions="Center" HorizontalOptions="End"></Label>
+        <Label x:Name="output" Text="" FontSize="32" Grid.ColumnSpan="4" Grid.Row="1" VerticalOptions="Center" HorizontalOptions="End"></Label>
+        <Button BorderWidth="1" BackgroundColor="White" Text="7" Clicked="OnDigitClicked" FontSize="30" Grid.Column="0" Grid.Row="4"></Button>
+        <Button BorderWidth="1" BackgroundColor="White" Text="8" Clicked="OnDigitClicked" FontSize="30" Grid.Column="1" Grid.Row="4"></Button>
+        <Button BorderWidth="1" BackgroundColor="White" Text="9" Clicked="OnDigitClicked" FontSize="30" Grid.Column="2" Grid.Row="4"></Button>
+        <Button BorderWidth="1" BackgroundColor="White" Text="4" Clicked="OnDigitClicked" FontSize="30" Grid.Column="0" Grid.Row="5"></Button>
+        <Button BorderWidth="1" BackgroundColor="White" Text="5" Clicked="OnDigitClicked" FontSize="30" Grid.Column="1" Grid.Row="5"></Button>
+        <Button BorderWidth="1" BackgroundColor="White" Text="6" Clicked="OnDigitClicked" FontSize="30" Grid.Column="2" Grid.Row="5"></Button>
+        <Button BorderWidth="1" BackgroundColor="White" Text="1" Clicked="OnDigitClicked" FontSize="30" Grid.Column="0" Grid.Row="6"></Button>
+        <Button BorderWidth="1" BackgroundColor="White" Text="2" Clicked="OnDigitClicked" FontSize="30" Grid.Column="1" Grid.Row="6"></Button>
+        <Button BorderWidth="1" BackgroundColor="White" Text="3" Clicked="OnDigitClicked" FontSize="30" Grid.Column="2" Grid.Row="6"></Button>
+        <Button BorderWidth="1" BackgroundColor="White" Text="+/-" Clicked="OnChangeClicked" FontSize="30" Grid.Column="0" Grid.Row="7"></Button>
+        <Button BorderWidth="1" BackgroundColor="White" Text="0" Clicked="OnDigitClicked" FontSize="30" Grid.Column="1" Grid.Row="7"></Button>
+        <Button BorderWidth="1" BackgroundColor="White" Text="," Clicked="OnDotClicked" FontSize="30" Grid.Column="2" Grid.Row="7"></Button>
+        <Button BorderWidth="1" Text="=" Clicked="OnEqualsClicked" FontSize="30" Grid.Column="3" Grid.Row="7"></Button>
+        <Button BorderWidth="1" Text="+" BackgroundColor="Grey" Clicked="OnPlusClicked" FontSize="30" Grid.Column="3" Grid.Row="6"></Button>
+        <Button BorderWidth="1" Text="-" BackgroundColor="Grey" Clicked="OnMinusClicked" FontSize="30" Grid.Column="3" Grid.Row="5"></Button>
+        <Button BorderWidth="1" Text="x" BackgroundColor="Grey" Clicked="OnProductClicked" FontSize="30" Grid.Column="3" Grid.Row="4"></Button>
+        <Button BorderWidth="1" Text="1/x" BackgroundColor="Grey" Clicked="OnReverseClicked" FontSize="30" Grid.Column="0" Grid.Row="3"></Button>
+        <Button BorderWidth="1" Text="x^2" BackgroundColor="Grey" Clicked="OnSquareClicked" FontSize="30" Grid.Column="1" Grid.Row="3"></Button>
+        <Button BorderWidth="1" Text="√x" BackgroundColor="Grey" Clicked="OnRootClicked" FontSize="30" Grid.Column="2" Grid.Row="3"></Button>
+        <Button BorderWidth="1" Text="÷" BackgroundColor="Grey" Clicked="OnDivideClicked" FontSize="30" Grid.Column="3" Grid.Row="3"></Button>
+        <Button BorderWidth="1" Text="2^x" BackgroundColor="Grey" Clicked="OnTwoPowClicked" FontSize="30" Grid.Column="0" Grid.Row="2"></Button>
+        <Button BorderWidth="1" Text="CE" BackgroundColor="Grey" Clicked="OnCEClicked" FontSize="30" Grid.Column="1" Grid.Row="2"></Button>
+        <Button BorderWidth="1" Text="C" BackgroundColor="Grey" Clicked="OnCClicked" FontSize="30" Grid.Column="2" Grid.Row="2"></Button>
+        <Button BorderWidth="1" Text="DEL" BackgroundColor="Grey" Clicked="OnDelClicked" FontSize="30" Grid.Column="3" Grid.Row="2"></Button>
+    </Grid>
+</ContentPage>
